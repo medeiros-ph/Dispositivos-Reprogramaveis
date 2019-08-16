@@ -1,0 +1,14 @@
+|disp_control
+bar[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+bar[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+bar[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+bar[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+bar[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+bar[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+bar[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+
+

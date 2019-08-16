@@ -1,0 +1,20 @@
+--
+--  Decodificador e controlador de Display 7 Segmentos em VHDL
+--
+--  Objetivo: Pressionar um botão e incrementar o display de 0 a 9
+--         _________                     _____
+--        |         |                   |  a  |
+--        |         | 7                 |f   b|
+--  but --| entity  |-/- bar            |_____|
+--        |         |                   |  g  |
+--        |_________|                   |e   c|
+--                                      |_____|
+--                                         d
+--  Kit de Desenvolvimento: EE02-SOQ
+--
+--  Adquira em: http://www.professoremersonmartins.com.br/site/products/KIT-FPGA-%252d-EE02-%252d-SOQ.html
+--
+--  Autor: Eng. Wagner Rambo  Data: Setembro de 2015
+--
+--  www.wrkits.com.br  |  facebook.com/wrkits  |  youtube.com/user/canalwrkits
+--
