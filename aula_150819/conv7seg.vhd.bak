@@ -1,0 +1,11 @@
+entity conv7seg is
+port(
+
+);
+end entity conv7seg;
+
+architecture c_conv7seg of conv7seg is
+
+begin
+
+end architecture c_conv7seg;
