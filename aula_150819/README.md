@@ -27,15 +27,15 @@ Maquina de estado (sem depender da entrada) de números primos até 15.
 Sequência: 2, 3, 5, 7, 11 e 13.
 Exemplo com dois displays de 7 seguimentos: decimal e estado.
 
---         _________                     _____		 _____
---        |         |                   |  a  |		|  a  |
---        |         | 7                 |f   b|		|f   b|
---  clk --| entity  |-/- estado decimal |_____|		|_____|
---        |         |-/- estado unidade |  g  |		|  g  |
---        |_________|                   |e   c|		|e   c|
---                                      |_____|		|_____|
---                                         d		   d	
---					ESTADO		UNIDADE
+<p>--         _________                     _____		 _____<p>
+<p>--        |         |                   |  a  |		|  a  |<p>
+<p>--        |         | 7                 |f   b|		|f   b|<p>
+<p>--  clk --| entity  |-/- estado decimal |_____|		|_____|<p>
+<p>--        |         |-/- estado unidade |  g  |		|  g  |<p>
+<p>--        |_________|                   |e   c|		|e   c|<p>
+<p>--                                      |_____|		|_____|<p>
+<p>--                                         d		   d	<p>
+<p>--					ESTADO		UNIDADE<p>
 
 Material para download: 
 http://gen-io.grupogen.com.br/gen-io/index.php?option=com_content&view=article&id=300&catid=60&Itemid=96
