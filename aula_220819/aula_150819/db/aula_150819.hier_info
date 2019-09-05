@@ -1,0 +1,131 @@
+|aula_150819
+clk => maqest:xmaq.clk
+decimal[0] <= conv7seg:xdec.disp[0]
+decimal[1] <= conv7seg:xdec.disp[1]
+decimal[2] <= conv7seg:xdec.disp[2]
+decimal[3] <= conv7seg:xdec.disp[3]
+decimal[4] <= conv7seg:xdec.disp[4]
+decimal[5] <= conv7seg:xdec.disp[5]
+decimal[6] <= conv7seg:xdec.disp[6]
+unidade[0] <= conv7seg:xuni.disp[0]
+unidade[1] <= conv7seg:xuni.disp[1]
+unidade[2] <= conv7seg:xuni.disp[2]
+unidade[3] <= conv7seg:xuni.disp[3]
+unidade[4] <= conv7seg:xuni.disp[4]
+unidade[5] <= conv7seg:xuni.disp[5]
+unidade[6] <= conv7seg:xuni.disp[6]
+
+
+|aula_150819|conv7seg:xdec
+dado[0] => Mux0.IN19
+dado[0] => Mux1.IN19
+dado[0] => Mux2.IN19
+dado[0] => Mux3.IN19
+dado[0] => Mux4.IN19
+dado[0] => Mux5.IN19
+dado[0] => Mux6.IN19
+dado[1] => Mux0.IN18
+dado[1] => Mux1.IN18
+dado[1] => Mux2.IN18
+dado[1] => Mux3.IN18
+dado[1] => Mux4.IN18
+dado[1] => Mux5.IN18
+dado[1] => Mux6.IN18
+dado[2] => Mux0.IN17
+dado[2] => Mux1.IN17
+dado[2] => Mux2.IN17
+dado[2] => Mux3.IN17
+dado[2] => Mux4.IN17
+dado[2] => Mux5.IN17
+dado[2] => Mux6.IN17
+dado[3] => Mux0.IN16
+dado[3] => Mux1.IN16
+dado[3] => Mux2.IN16
+dado[3] => Mux3.IN16
+dado[3] => Mux4.IN16
+dado[3] => Mux5.IN16
+dado[3] => Mux6.IN16
+en => disp.OUTPUTSELECT
+en => disp.OUTPUTSELECT
+en => disp.OUTPUTSELECT
+en => disp.OUTPUTSELECT
+en => disp.OUTPUTSELECT
+en => disp.OUTPUTSELECT
+en => disp.OUTPUTSELECT
+disp[0] <= disp.DB_MAX_OUTPUT_PORT_TYPE
+disp[1] <= disp.DB_MAX_OUTPUT_PORT_TYPE
+disp[2] <= disp.DB_MAX_OUTPUT_PORT_TYPE
+disp[3] <= disp.DB_MAX_OUTPUT_PORT_TYPE
+disp[4] <= disp.DB_MAX_OUTPUT_PORT_TYPE
+disp[5] <= disp.DB_MAX_OUTPUT_PORT_TYPE
+disp[6] <= disp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula_150819|conv7seg:xuni
+dado[0] => Mux0.IN19
+dado[0] => Mux1.IN19
+dado[0] => Mux2.IN19
+dado[0] => Mux3.IN19
+dado[0] => Mux4.IN19
+dado[0] => Mux5.IN19
+dado[0] => Mux6.IN19
+dado[1] => Mux0.IN18
+dado[1] => Mux1.IN18
+dado[1] => Mux2.IN18
+dado[1] => Mux3.IN18
+dado[1] => Mux4.IN18
+dado[1] => Mux5.IN18
+dado[1] => Mux6.IN18
+dado[2] => Mux0.IN17
+dado[2] => Mux1.IN17
+dado[2] => Mux2.IN17
+dado[2] => Mux3.IN17
+dado[2] => Mux4.IN17
+dado[2] => Mux5.IN17
+dado[2] => Mux6.IN17
+dado[3] => Mux0.IN16
+dado[3] => Mux1.IN16
+dado[3] => Mux2.IN16
+dado[3] => Mux3.IN16
+dado[3] => Mux4.IN16
+dado[3] => Mux5.IN16
+dado[3] => Mux6.IN16
+en => disp.OUTPUTSELECT
+en => disp.OUTPUTSELECT
+en => disp.OUTPUTSELECT
+en => disp.OUTPUTSELECT
+en => disp.OUTPUTSELECT
+en => disp.OUTPUTSELECT
+en => disp.OUTPUTSELECT
+disp[0] <= disp.DB_MAX_OUTPUT_PORT_TYPE
+disp[1] <= disp.DB_MAX_OUTPUT_PORT_TYPE
+disp[2] <= disp.DB_MAX_OUTPUT_PORT_TYPE
+disp[3] <= disp.DB_MAX_OUTPUT_PORT_TYPE
+disp[4] <= disp.DB_MAX_OUTPUT_PORT_TYPE
+disp[5] <= disp.DB_MAX_OUTPUT_PORT_TYPE
+disp[6] <= disp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|aula_150819|maqest:xmaq
+clk => unidade[0]~reg0.CLK
+clk => unidade[1]~reg0.CLK
+clk => unidade[2]~reg0.CLK
+clk => unidade[3]~reg0.CLK
+clk => decimal[0]~reg0.CLK
+clk => decimal[1]~reg0.CLK
+clk => decimal[2]~reg0.CLK
+clk => decimal[3]~reg0.CLK
+clk => \p1:estado[0].CLK
+clk => \p1:estado[1].CLK
+clk => \p1:estado[2].CLK
+clk => \p1:estado[3].CLK
+decimal[0] <= decimal[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+decimal[1] <= decimal[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+decimal[2] <= decimal[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+decimal[3] <= decimal[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[0] <= unidade[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[1] <= unidade[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[2] <= unidade[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+unidade[3] <= unidade[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
