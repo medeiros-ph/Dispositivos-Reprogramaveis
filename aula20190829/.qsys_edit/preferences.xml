@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="127" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="548" />
+   <clocksource preferredWidth="547" />
+   <frequency preferredWidth="529" />
+  </columns>
+ </clocktable>
+ <window width="1936" height="1066" x="-8" y="-8" />
+ <library
+   expandedCategories="Project,Library/Peripherals/Microcontroller Peripherals,Library/Interface Protocols,Library/Microcontroller Peripherals,Library/Interface Protocols/Serial,Library/Peripherals,Library/Memories and Memory Controllers,Library" />
+ <generation synthesis="VHDL" />
+</preferences>
