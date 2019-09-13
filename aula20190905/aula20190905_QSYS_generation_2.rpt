@@ -1,0 +1,203 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=C:/Users/Aluno/Documents/Dispositivos/aula20190905/ --output-directory=C:/Users/Aluno/Documents/Dispositivos/aula20190905/aula20190905_QSYS/ --report-file=bsf:C:/Users/Aluno/Documents/Dispositivos/aula20190905/aula20190905_QSYS.bsf --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C35F672C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/Users/Aluno/Documents/Dispositivos/aula20190905/aula20190905_QSYS.qsys
+Progress: Loading aula20190905/aula20190905_QSYS.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 13.0]
+Progress: Parameterizing module clk_50
+Progress: Adding nios2_qsys [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding key [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module key
+Progress: Adding sw [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module sw
+Progress: Adding ledg [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module ledg
+Progress: Adding ledr [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module ledr
+Progress: Adding hex6 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module hex6
+Progress: Adding hex7 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module hex7
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: aula20190905_QSYS.key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: aula20190905_QSYS.sw: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=C:/Users/Aluno/Documents/Dispositivos/aula20190905/ --output-directory=C:/Users/Aluno/Documents/Dispositivos/aula20190905/aula20190905_QSYS/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:C:/Users/Aluno/Documents/Dispositivos/aula20190905/aula20190905_QSYS.sopcinfo --report-file=html:C:/Users/Aluno/Documents/Dispositivos/aula20190905/aula20190905_QSYS.html --report-file=qip:C:/Users/Aluno/Documents/Dispositivos/aula20190905/aula20190905_QSYS/synthesis/aula20190905_QSYS.qip --report-file=cmp:C:/Users/Aluno/Documents/Dispositivos/aula20190905/aula20190905_QSYS.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C35F672C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=C:/Users/Aluno/Documents/Dispositivos/aula20190905/aula20190905_QSYS.qsys --language=VHDL
+Progress: Loading aula20190905/aula20190905_QSYS.qsys
+Progress: Reading input file
+Progress: Adding clk_50 [clock_source 13.0]
+Progress: Parameterizing module clk_50
+Progress: Adding nios2_qsys [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1.99.2]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart
+Progress: Adding key [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module key
+Progress: Adding sw [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module sw
+Progress: Adding ledg [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module ledg
+Progress: Adding ledr [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module ledr
+Progress: Adding hex6 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module hex6
+Progress: Adding hex7 [altera_avalon_pio 13.0.1.99.2]
+Progress: Parameterizing module hex7
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: aula20190905_QSYS.key: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: aula20190905_QSYS.sw: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: aula20190905_QSYS: Generating aula20190905_QSYS "aula20190905_QSYS" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 10 modules, 37 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 21 modules, 70 connections
+Info: merlin_domain_transform: After transform: 42 modules, 174 connections
+Info: merlin_router_transform: After transform: 53 modules, 207 connections
+Info: reset_adaptation_transform: After transform: 54 modules, 209 connections
+Info: merlin_network_to_switch_transform: After transform: 75 modules, 267 connections
+Info: merlin_mm_transform: After transform: 75 modules, 267 connections
+Info: merlin_interrupt_mapper_transform: After transform: 76 modules, 270 connections
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Warning: aula20190905_QSYS: "No matching role found for rst_controller:reset_out:reset_req (reset_req)"
+Info: nios2_qsys: Starting RTL generation for module 'aula20190905_QSYS_nios2_qsys'
+Info: nios2_qsys:   Generation command is [exec C:/altera/web_13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/web_13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin -I C:/altera/web_13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/web_13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/web_13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/web_13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/web_13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=aula20190905_QSYS_nios2_qsys --dir=C:/Users/Aluno/AppData/Local/Temp/alt8144_3519541369401616132.dir/0037_nios2_qsys_gen/ --quartus_dir=C:/altera/web_13.0sp1/quartus --verilog --config=C:/Users/Aluno/AppData/Local/Temp/alt8144_3519541369401616132.dir/0037_nios2_qsys_gen//aula20190905_QSYS_nios2_qsys_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2_qsys: # 2019.09.05 21:02:12 (*) Starting Nios II generation
+Info: nios2_qsys: # 2019.09.05 21:02:12 (*)   Checking for plaintext license.
+Info: nios2_qsys: # 2019.09.05 21:02:13 (*)   Couldn't query license setup in Quartus directory C:/altera/web_13.0sp1/quartus
+Info: nios2_qsys: # 2019.09.05 21:02:13 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys: # 2019.09.05 21:02:13 (*)   LM_LICENSE_FILE environment variable is empty
+Info: nios2_qsys: # 2019.09.05 21:02:13 (*)   Plaintext license not found.
+Info: nios2_qsys: # 2019.09.05 21:02:13 (*)   No license required to generate encrypted Nios II/e.
+Info: nios2_qsys: # 2019.09.05 21:02:13 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys: # 2019.09.05 21:02:13 (*)   Creating all objects for CPU
+Info: nios2_qsys: # 2019.09.05 21:02:15 (*)   Generating RTL from CPU objects
+Info: nios2_qsys: # 2019.09.05 21:02:15 (*)   Creating plain-text RTL
+Info: nios2_qsys: # 2019.09.05 21:02:18 (*) Done Nios II generation
+Info: nios2_qsys: Done RTL generation for module 'aula20190905_QSYS_nios2_qsys'
+Info: nios2_qsys: "aula20190905_QSYS" instantiated altera_nios2_qsys "nios2_qsys"
+Info: onchip_memory2_0: Starting RTL generation for module 'aula20190905_QSYS_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec C:/altera/web_13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/web_13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin -I C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=aula20190905_QSYS_onchip_memory2_0 --dir=C:/Users/Aluno/AppData/Local/Temp/alt8144_3519541369401616132.dir/0038_onchip_memory2_0_gen/ --quartus_dir=C:/altera/web_13.0sp1/quartus --verilog --config=C:/Users/Aluno/AppData/Local/Temp/alt8144_3519541369401616132.dir/0038_onchip_memory2_0_gen//aula20190905_QSYS_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'aula20190905_QSYS_onchip_memory2_0'
+Info: onchip_memory2_0: "aula20190905_QSYS" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: jtag_uart: Starting RTL generation for module 'aula20190905_QSYS_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/altera/web_13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/web_13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin -I C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=aula20190905_QSYS_jtag_uart --dir=C:/Users/Aluno/AppData/Local/Temp/alt8144_3519541369401616132.dir/0039_jtag_uart_gen/ --quartus_dir=C:/altera/web_13.0sp1/quartus --verilog --config=C:/Users/Aluno/AppData/Local/Temp/alt8144_3519541369401616132.dir/0039_jtag_uart_gen//aula20190905_QSYS_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'aula20190905_QSYS_jtag_uart'
+Info: jtag_uart: "aula20190905_QSYS" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: key: Starting RTL generation for module 'aula20190905_QSYS_key'
+Info: key:   Generation command is [exec C:/altera/web_13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/web_13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin -I C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=aula20190905_QSYS_key --dir=C:/Users/Aluno/AppData/Local/Temp/alt8144_3519541369401616132.dir/0040_key_gen/ --quartus_dir=C:/altera/web_13.0sp1/quartus --verilog --config=C:/Users/Aluno/AppData/Local/Temp/alt8144_3519541369401616132.dir/0040_key_gen//aula20190905_QSYS_key_component_configuration.pl  --do_build_sim=0  ]
+Info: key: Done RTL generation for module 'aula20190905_QSYS_key'
+Info: key: "aula20190905_QSYS" instantiated altera_avalon_pio "key"
+Info: sw: Starting RTL generation for module 'aula20190905_QSYS_sw'
+Info: sw:   Generation command is [exec C:/altera/web_13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/web_13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin -I C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=aula20190905_QSYS_sw --dir=C:/Users/Aluno/AppData/Local/Temp/alt8144_3519541369401616132.dir/0041_sw_gen/ --quartus_dir=C:/altera/web_13.0sp1/quartus --verilog --config=C:/Users/Aluno/AppData/Local/Temp/alt8144_3519541369401616132.dir/0041_sw_gen//aula20190905_QSYS_sw_component_configuration.pl  --do_build_sim=0  ]
+Info: sw: Done RTL generation for module 'aula20190905_QSYS_sw'
+Info: sw: "aula20190905_QSYS" instantiated altera_avalon_pio "sw"
+Info: ledg: Starting RTL generation for module 'aula20190905_QSYS_ledg'
+Info: ledg:   Generation command is [exec C:/altera/web_13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/web_13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin -I C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=aula20190905_QSYS_ledg --dir=C:/Users/Aluno/AppData/Local/Temp/alt8144_3519541369401616132.dir/0042_ledg_gen/ --quartus_dir=C:/altera/web_13.0sp1/quartus --verilog --config=C:/Users/Aluno/AppData/Local/Temp/alt8144_3519541369401616132.dir/0042_ledg_gen//aula20190905_QSYS_ledg_component_configuration.pl  --do_build_sim=0  ]
+Info: ledg: Done RTL generation for module 'aula20190905_QSYS_ledg'
+Info: ledg: "aula20190905_QSYS" instantiated altera_avalon_pio "ledg"
+Info: hex6: Starting RTL generation for module 'aula20190905_QSYS_hex6'
+Info: hex6:   Generation command is [exec C:/altera/web_13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/web_13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/web_13.0sp1/quartus/sopc_builder/bin -I C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/web_13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=aula20190905_QSYS_hex6 --dir=C:/Users/Aluno/AppData/Local/Temp/alt8144_3519541369401616132.dir/0043_hex6_gen/ --quartus_dir=C:/altera/web_13.0sp1/quartus --verilog --config=C:/Users/Aluno/AppData/Local/Temp/alt8144_3519541369401616132.dir/0043_hex6_gen//aula20190905_QSYS_hex6_component_configuration.pl  --do_build_sim=0  ]
+Info: hex6: Done RTL generation for module 'aula20190905_QSYS_hex6'
+Info: hex6: "aula20190905_QSYS" instantiated altera_avalon_pio "hex6"
+Info: nios2_qsys_instruction_master_translator: "aula20190905_QSYS" instantiated altera_merlin_master_translator "nios2_qsys_instruction_master_translator"
+Info: nios2_qsys_jtag_debug_module_translator: "aula20190905_QSYS" instantiated altera_merlin_slave_translator "nios2_qsys_jtag_debug_module_translator"
+Info: nios2_qsys_instruction_master_translator_avalon_universal_master_0_agent: "aula20190905_QSYS" instantiated altera_merlin_master_agent "nios2_qsys_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent: "aula20190905_QSYS" instantiated altera_merlin_slave_agent "nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "aula20190905_QSYS" instantiated altera_avalon_sc_fifo "nios2_qsys_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "aula20190905_QSYS" instantiated altera_merlin_router "addr_router"
+Info: id_router: "aula20190905_QSYS" instantiated altera_merlin_router "id_router"
+Info: rst_controller: "aula20190905_QSYS" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "aula20190905_QSYS" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_mux: "aula20190905_QSYS" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "aula20190905_QSYS" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_mux: "aula20190905_QSYS" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file C:/Users/Aluno/Documents/Dispositivos/aula20190905/aula20190905_QSYS/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: irq_mapper: "aula20190905_QSYS" instantiated altera_irq_mapper "irq_mapper"
+Info: aula20190905_QSYS: Done aula20190905_QSYS" with 21 modules, 121 files, 2514920 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

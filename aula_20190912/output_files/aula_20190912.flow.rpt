@@ -1,0 +1,129 @@
+Flow report for aula_20190912
+Thu Sep 12 20:19:23 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Thu Sep 12 20:19:23 2019           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; aula_20190912                                   ;
+; Top-level Entity Name              ; aula_20190912                                   ;
+; Family                             ; Cyclone II                                      ;
+; Device                             ; EP2C35F672C6                                    ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 2,302 / 33,216 ( 7 % )                          ;
+;     Total combinational functions  ; 2,174 / 33,216 ( 7 % )                          ;
+;     Dedicated logic registers      ; 1,158 / 33,216 ( 3 % )                          ;
+; Total registers                    ; 1158                                            ;
+; Total pins                         ; 105 / 475 ( 22 % )                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 338,944 / 483,840 ( 70 % )                      ;
+; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
++------------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 09/12/2019 20:17:30 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; aula_20190912       ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                           ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 220812841904223.156833025001300       ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
++-------------------------------------+---------------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:55     ; 1.0                     ; 4754 MB             ; 00:00:43                           ;
+; Fitter                    ; 00:00:29     ; 1.0                     ; 4916 MB             ; 00:00:20                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 4587 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:04     ; 1.0                     ; 4595 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4559 MB             ; 00:00:03                           ;
+; Total                     ; 00:01:37     ; --                      ; --                  ; 00:01:11                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; LapsiE214-HP     ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; LapsiE214-HP     ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; LapsiE214-HP     ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; LapsiE214-HP     ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; LapsiE214-HP     ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off aula_20190912 -c aula_20190912
+quartus_fit --read_settings_files=off --write_settings_files=off aula_20190912 -c aula_20190912
+quartus_asm --read_settings_files=off --write_settings_files=off aula_20190912 -c aula_20190912
+quartus_sta aula_20190912 -c aula_20190912
+quartus_eda --read_settings_files=off --write_settings_files=off aula_20190912 -c aula_20190912
+
+
+

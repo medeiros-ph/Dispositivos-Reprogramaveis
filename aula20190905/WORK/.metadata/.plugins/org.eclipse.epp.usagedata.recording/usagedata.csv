@@ -1,0 +1,42 @@
+what,kind,bundleId,bundleVersion,description,time
+java.version,sysinfo,,,"1.6.0_23",1567729916001
+java.vm.info,sysinfo,,,"mixed mode",1567729916001
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1567729916001
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1567729916001
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1567729916001
+java.vm.specification.version,sysinfo,,,"1.0",1567729916001
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1567729916001
+java.vm.version,sysinfo,,,"19.0-b09",1567729916001
+started,bundle,com.altera.sbtgui.launch,13.13.0.132,"com.altera.sbtgui.launch",1567729916749
+activated,view,org.eclipse.ui.navigator.resources,3.4.300.v20110928-1505,"org.eclipse.ui.navigator.ProjectExplorer",1567729916988
+started,bundle,com.altera.sbtgui.core,13.13.0.132,"com.altera.sbtgui.core",1567729917132
+started,bundle,org.eclipse.compare.core,3.5.200.I20110208-0800,"org.eclipse.compare.core",1567729917171
+started,bundle,org.eclipse.compare,3.5.202.R37x_v20111109-0800,"org.eclipse.compare",1567729917176
+started,bundle,org.eclipse.linuxtools.cdt.autotools.core,1.0.2.201202152032,"org.eclipse.linuxtools.cdt.autotools.core",1567729917580
+started,bundle,org.eclipse.core.variables,3.2.500.v20110928-1503,"org.eclipse.core.variables",1567729917596
+started,bundle,org.eclipse.cdt.managedbuilder.gnu.ui,8.0.2.201202111925,"org.eclipse.cdt.managedbuilder.gnu.ui",1567729917627
+started,bundle,org.eclipse.cdt.msw.build,1.0.0.201202111925,"org.eclipse.cdt.msw.build",1567729917674
+opened,view,org.eclipse.ui.ide,3.7.0.v20110928-1505,"org.eclipse.ui.views.ProblemView",1567729917908
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567729922869
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567729928376
+started,bundle,org.eclipse.debug.ui,3.7.102.v20111129-1423_r372,"org.eclipse.debug.ui",1567729932454
+started,bundle,org.eclipse.cdt.debug.core,7.1.0.201202111925,"org.eclipse.cdt.debug.core",1567729932532
+started,bundle,org.eclipse.cdt.debug.ui,7.1.2.201202111925,"org.eclipse.cdt.debug.ui",1567729932548
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567729933370
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567729935750
+started,bundle,org.eclipse.cdt.launch,7.0.0.201202111925,"org.eclipse.cdt.launch",1567729968641
+started,bundle,com.altera.debug.cdi.gdb.plugin,13.13.0.132,"com.altera.debug.cdi.gdb.plugin",1567729978907
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567729979204
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567729979344
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567729979422
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567729982219
+executed,command,,,"com.altera.sbtgui.launch.hardware.Nios2HardwareLaunchShortcut.run",1567729982235
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567729983955
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567729987236
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567729996986
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567730001985
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567730005110
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567730240723
+deactivated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567730245236
+activated,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567730246612
+closed,workbench,org.eclipse.ui.workbench,3.7.1.v20120104-1859,"",1567730248408

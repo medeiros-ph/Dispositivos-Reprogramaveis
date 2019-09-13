@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Sep 12 20:19:03 2019
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+Revision Name : aula_20190912
+Top-level Entity Name : aula_20190912
+Family : Cyclone II
+Device : EP2C35F672C6
+Timing Models : Final
+Total logic elements : 2,302 / 33,216 ( 7 % )
+    Total combinational functions : 2,174 / 33,216 ( 7 % )
+    Dedicated logic registers : 1,158 / 33,216 ( 3 % )
+Total registers : 1158
+Total pins : 105 / 475 ( 22 % )
+Total virtual pins : 0
+Total memory bits : 338,944 / 483,840 ( 70 % )
+Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

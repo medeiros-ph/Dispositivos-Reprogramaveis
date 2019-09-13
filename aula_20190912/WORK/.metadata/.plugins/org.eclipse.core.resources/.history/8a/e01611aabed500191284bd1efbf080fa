@@ -1,0 +1,293 @@
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+
+#include "sys/alt_stdio.h"
+#include "alt_types.h"
+
+//biblioteca para usar a função de atraso em microsegundos função => usleep("tempo_us")
+#include <unistd.h>
+
+//Comandos para leitura e escrita nas portas IO
+#define PORT(base)		IORD_ALTERA_AVALON_PIO_DATA(base)
+#define LAT(base, data)	IOWR_ALTERA_AVALON_PIO_DATA(base, data)
+
+//Variáveis globais relacionadas as interruções síncronas por software
+alt_u16 max_timer0, max_timer1, max_timer2;
+
+//void setup (void);
+void f_timer0 (void);
+void f_timer1 (void);
+void f_timer2 (void);
+void loop (void);
+void f_interrupt (void);
+
+void setup (int dado, int local);
+
+void setup (int dado, int local) {
+
+
+	max_timer0 = 299;
+	LAT(GRAVA_BASE, 0);
+	LAT(DADO_BASE, dado);
+	LAT(TIPO_BASE, 1);
+	LAT(LOCAL_BASE, local); //unidade
+
+	LAT(GRAVA_BASE, 1);
+	//nop();
+	LAT(GRAVA_BASE, 0);
+
+
+
+}
+
+void f_timer0 (void) {
+
+	int estado = 0;
+
+	int sequencia = 0;
+	sequencia = PORT(SW_BASE)&&1;
+
+	if(sequencia == 0)
+	{
+		switch (estado)
+			{
+
+				case 0:
+					estado = 2;
+					setup(0, 1);
+					setup(2, 0);
+				case 1:
+					estado = 2;
+					setup(0, 1);
+					setup(2, 0);
+				case 2:
+					estado = 3;
+					setup(0, 1);
+					setup(3, 0);
+				case 3:
+					estado = 5;
+					setup(0, 1);
+					setup(5, 0);
+				case 4:
+					estado = 5;
+					setup(0, 1);
+					setup(5, 0);
+				case 5:
+					estado = 7;
+					setup(0, 1);
+					setup(7, 0);
+				case 6:
+					estado = 7;
+					setup(0, 1);
+					setup(7, 0);
+				case 7:
+					estado = 11;
+					setup(1, 1);
+					setup(1, 0);
+				case 8:
+					estado = 11;
+					setup(1, 1);
+					setup(1, 0);
+				case 9:
+					estado = 11;
+					setup(1, 1);
+					setup(1, 0);
+				case 10:
+					estado = 11;
+					setup(1, 1);
+					setup(1, 0);
+				case 11:
+					estado = 13;
+					setup(1, 1);
+					setup(3, 0);
+				case 12:
+					estado = 13;
+					setup(1, 1);
+					setup(3, 0);
+				case 13:
+					estado = 17;
+					setup(1, 1);
+					setup(7, 0);
+				case 14:
+					estado = 17;
+					setup(1, 1);
+					setup(7, 0);
+				case 15:
+					estado = 17;
+					setup(1, 1);
+					setup(7, 0);
+				case 16:
+					estado = 17;
+					setup(1, 1);
+					setup(7, 0);
+				case 17:
+					estado = 19;
+					setup(1, 1);
+					setup(9, 0);
+				case 18:
+					estado = 19;
+					setup(1, 1);
+					setup(9, 0);
+				case 19:
+					estado = 2;
+					setup(0, 1);
+					setup(2, 0);
+				case 20:
+					estado = 2;
+					setup(0, 1);
+					setup(2, 0);
+				default:
+					estado = 2;
+					setup(0, 1);
+					setup(2, 0);
+			}
+
+
+	}
+	else
+	{
+		switch (estado)
+			{
+
+				case 0:
+					estado = 3;
+					setup(0, 1);
+					setup(3, 0);
+				case 1:
+					estado = 3;
+					setup(0, 1);
+					setup(3, 0);
+				case 2:
+					estado = 3;
+					setup(0, 1);
+					setup(3, 0);
+				case 3:
+					estado = 6;
+					setup(0, 1);
+					setup(6, 0);
+				case 4:
+					estado = 6;
+					setup(0, 1);
+					setup(6, 0);
+				case 5:
+					estado = 6;
+					setup(0, 1);
+					setup(6, 0);
+				case 6:
+					estado = 9;
+					setup(0, 1);
+					setup(9, 0);
+				case 7:
+					estado = 9;
+					setup(0, 1);
+					setup(9, 0);
+				case 8:
+					estado = 9;
+					setup(0, 1);
+					setup(9, 0);
+				case 9:
+					estado = 12;
+					setup(1, 1);
+					setup(2, 0);
+				case 10:
+					estado = 12;
+					setup(1, 1);
+					setup(2, 0);
+				case 11:
+					estado = 12;
+					setup(1, 1);
+					setup(2, 0);
+				case 12:
+					estado = 15;
+					setup(1, 1);
+					setup(5, 0);
+				case 13:
+					estado = 15;
+					setup(1, 1);
+					setup(5, 0);
+				case 14:
+					estado = 15;
+					setup(1, 1);
+					setup(5, 0);
+				case 15:
+					estado = 18;
+					setup(1, 1);
+					setup(8, 0);
+				case 16:
+					estado = 18;
+					setup(1, 1);
+					setup(8, 0);
+				case 17:
+					estado = 18;
+					setup(1, 1);
+					setup(8, 0);
+				case 18:
+					estado = 0;
+					setup(0, 1);
+					setup(0, 0);
+				case 19:
+					estado = 0;
+					setup(0, 1);
+					setup(0, 0);
+				case 20:
+					estado = 0;
+					setup(0, 1);
+					setup(0, 0);
+				default:
+					estado = 0;
+					setup(0, 1);
+					setup(0, 0);
+			}
+
+
+	}
+
+
+}
+
+void f_timer1 (void) {
+
+}
+
+void f_timer2 (void) {
+
+}
+
+void loop (void) {
+	f_interrupt();
+	usleep(1000);
+}
+
+int main() {
+	//setup();
+	while (1) loop();
+	return 0;
+}
+
+void f_interrupt (void) {
+
+	static alt_u16 cont_timer0=0, cont_timer1=0, cont_timer2=0;
+
+	cont_timer0++; cont_timer1++; cont_timer2++;
+
+	if (cont_timer0 < max_timer0)
+		cont_timer0++;
+	else {
+		cont_timer0 = 0;
+		f_timer0();
+	}
+
+	if (cont_timer1 < max_timer1)
+		cont_timer1++;
+	else {
+		cont_timer1 = 0;
+		f_timer1();
+	}
+
+	if (cont_timer2 < max_timer2)
+		cont_timer2++;
+	else {
+		cont_timer2 = 0;
+		f_timer2();
+	}
+}
